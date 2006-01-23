@@ -1,0 +1,12 @@
+<!ENTITY tsvnmenu-topmenu "TortoiseSVN">
+<!ENTITY tsvnmenu-checkout "Checkout...">
+<!ENTITY tsvnmenu-showlog "Show Log">
+<!ENTITY tsvnmenu-repobrowser "Repo-Browser">
+<!ENTITY tsvnmenu-rename "Rename...">
+<!ENTITY tsvnmenu-delete "Delete...">
+<!ENTITY tsvnmenu-copy "Branch/Tag...">
+<!ENTITY tsvnmenu-export "Export...">
+<!ENTITY tsvnmenu-blame "Blame">
+<!ENTITY tsvnmenu-help "Help">
+<!ENTITY tsvnmenu-settings "Settings">
+<!ENTITY tsvnmenu-about "About">

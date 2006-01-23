@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+    <RDF:Description about="urn:mozilla:extension:tsvnmenu@pumacode.org">
+        <em:updates>
+            <RDF:Seq>
+                <RDF:li resource="urn:mozilla:extension:tsvnmenu@pumacode.org:0.2.0"/>
+            </RDF:Seq>
+        </em:updates>
+    </RDF:Description>
+    <RDF:Description about="urn:mozilla:extension:tsvnmenu@pumacode.org:0.2.0">
+        <em:version>0.2.0</em:version>
+        <em:targetApplication>
+            <RDF:Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:maxVersion>1.5.0.*</em:maxVersion>
+                <em:minVersion>1.4</em:minVersion>
+                <em:updateLink>http://www.pumacode.org/projects/tsvnmenu/tsvnmenu.xpi</em:updateLink>
+            </RDF:Description>
+        </em:targetApplication>
+    </RDF:Description>
+</RDF:RDF>

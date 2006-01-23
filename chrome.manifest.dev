@@ -1,0 +1,6 @@
+content	tsvnmenu	content/
+overlay	chrome://browser/content/browser.xul	chrome://tsvnmenu/content/tsvnmenuOverlay.xul
+
+locale	tsvnmenu	en-US	locale/en-US/
+
+skin	tsvnmenu	classic/1.0	skin/

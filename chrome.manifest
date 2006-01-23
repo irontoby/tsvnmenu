@@ -1,0 +1,6 @@
+content	tsvnmenu	jar:chrome/tsvnmenu.jar!/content/
+overlay	chrome://browser/content/browser.xul	chrome://tsvnmenu/content/tsvnmenuOverlay.xul
+
+locale	tsvnmenu	en-US	jar:chrome/tsvnmenu.jar!/locale/en-US/
+
+skin	tsvnmenu	classic/1.0	jar:chrome/tsvnmenu.jar!/skin/

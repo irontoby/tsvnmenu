@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://tsvnmenu/skin/tsvnmenuOverlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://tsvnmenu/locale/tsvnmenuOverlay.dtd">
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: GPL 2.0
+   -
+   - Contributor(s):
+   -  Toby Johnson <toby@tobiasly.com>
+   -
+   - The contents of this file may be used under the terms of
+   - the GNU General Public License Version 2 or later (the "GPL").
+   - See LICENSE.txt for more info.
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+<overlay id="tsvnmenu-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="tsvnmenuOverlay.js"/>
+
+  <popup id="contentAreaContextMenu">
+	<menuseparator id="tsvnmenu-topsep" />
+    <menu id="tsvnmenu-topmenu"
+          label="&tsvnmenu-topmenu;"
+          class="menu-iconic" >
+
+        <menupopup>
+            <menuitem id="tsvnmenu-checkout"
+                      label=" &tsvnmenu-checkout;"
+                      class="menuitem-iconic"
+                      oncommand="TsvnMenu.doTsvnCheckout();" />
+            <menuitem id="tsvnmenu-showlog"
+                      label=" &tsvnmenu-showlog;"
+                      class="menuitem-iconic"
+                      oncommand="TsvnMenu.doTsvnShowLog();" />
+            <menuitem id="tsvnmenu-repobrowser"
+                      label=" &tsvnmenu-repobrowser;"
+                      class="menuitem-iconic"
+                      oncommand="TsvnMenu.doTsvnRepoBrowser();" />
+        	<menuseparator />
+
+            <menuitem id="tsvnmenu-rename"
+                      label=" &tsvnmenu-rename;"
+                      class="menuitem-iconic"
+                      oncommand="TsvnMenu.doTsvnRename();" />
+            <menuitem id="tsvnmenu-delete"
+                      label=" &tsvnmenu-delete;"
+                      class="menuitem-iconic"
+                      oncommand="TsvnMenu.doTsvnDelete();" />
+        	<menuseparator />
+
+            <menuitem id="tsvnmenu-copy"
+                      label=" &tsvnmenu-copy;"
+                      class="menuitem-iconic"
+                      oncommand="TsvnMenu.doTsvnCopy();" />
+            
+            <menuitem id="tsvnmenu-export"
+                      label=" &tsvnmenu-export;"
+                      class="menuitem-iconic"
+                      oncommand="TsvnMenu.doTsvnExport();" />
+        	<menuseparator />
+
+            <menuitem id="tsvnmenu-blame"
+                      label=" &tsvnmenu-blame;"
+                      class="menuitem-iconic"
+                      oncommand="TsvnMenu.doTsvnBlame();" />
+        	<menuseparator />
+
+            <menuitem id="tsvnmenu-help"
+                      label=" &tsvnmenu-help;"
+                      class="menuitem-iconic"
+                      oncommand="TsvnMenu.doTsvnHelp();" />
+            <menuitem id="tsvnmenu-settings"
+                      label=" &tsvnmenu-settings;"
+                      class="menuitem-iconic"
+                      oncommand="TsvnMenu.doTsvnSettings();" />
+            <menuitem id="tsvnmenu-about"
+                      label=" &tsvnmenu-about;"
+                      class="menuitem-iconic"
+                      oncommand="TsvnMenu.doTsvnAbout();" />
+
+
+        </menupopup>
+    </menu>
+  </popup>
+
+</overlay>

@@ -1,0 +1,50 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#tsvnmenu-topmenu {
+	list-style-image:url("chrome://tsvnmenu/skin/tsvnmenu-tortoise.png");
+}
+
+#tsvnmenu-checkout {
+	list-style-image:url("chrome://tsvnmenu/skin/tsvnmenu-checkout.png");
+}
+
+#tsvnmenu-showlog {
+	list-style-image:url("chrome://tsvnmenu/skin/tsvnmenu-showlog.png");
+}
+
+#tsvnmenu-repobrowser {
+	list-style-image:url("chrome://tsvnmenu/skin/tsvnmenu-repobrowser.png");
+}
+
+#tsvnmenu-rename {
+	list-style-image:url("chrome://tsvnmenu/skin/tsvnmenu-rename.png");
+}
+
+#tsvnmenu-delete {
+	list-style-image:url("chrome://tsvnmenu/skin/tsvnmenu-delete.png");
+}
+
+#tsvnmenu-copy {
+	list-style-image:url("chrome://tsvnmenu/skin/tsvnmenu-copy.png");
+}
+
+#tsvnmenu-export {
+	list-style-image:url("chrome://tsvnmenu/skin/tsvnmenu-export.png");
+}
+
+#tsvnmenu-blame {
+	list-style-image:url("chrome://tsvnmenu/skin/tsvnmenu-blame.png");
+}
+
+#tsvnmenu-help {
+	list-style-image:url("chrome://tsvnmenu/skin/tsvnmenu-help.png");
+}
+
+#tsvnmenu-settings {
+	list-style-image:url("chrome://tsvnmenu/skin/tsvnmenu-settings.png");
+}
+
+#tsvnmenu-about {
+	list-style-image:url("chrome://tsvnmenu/skin/tsvnmenu-about.png");
+}
+
