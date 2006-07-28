@@ -6,13 +6,13 @@
   
     <em:id>tsvnmenu@pumacode.org</em:id>
     <em:name>TortoiseSVN Menu</em:name>
-    <em:version>0.2.0</em:version>
+    <em:version>0.2.1</em:version>
     <em:description>Add TortoiseSVN commands to link context menus</em:description>
     <em:creator>Copyright (C) 2005 Toby Johnson. Released under GPL v2.</em:creator>
     <!-- optional items -->
-    <em:homepageURL>http://www.pumacode.org/</em:homepageURL>
+    <em:homepageURL>http://www.pumacode.org/projects/tsvnmenu/</em:homepageURL>
     <em:iconURL>chrome://tsvnmenu/skin/tsvnmenu-icon.png</em:iconURL>
-    <em:updateURL>http://www.pumacode.org/projects/tsvnmenu/update.rdf</em:updateURL>
+    <em:updateURL>http://www.pumacode.org/download/tsvnmenu/update.rdf</em:updateURL>
 
     <!--em:optionsURL>chrome://sampleext/content/settings.xul</em:optionsURL>
     <em:aboutURL>chrome://sampleext/content/about.xul</em:aboutURL -->
