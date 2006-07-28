@@ -6,11 +6,11 @@
     <RDF:Description about="urn:mozilla:extension:tsvnmenu@pumacode.org">
         <em:updates>
             <RDF:Seq>
-                <RDF:li resource="urn:mozilla:extension:tsvnmenu@pumacode.org:0.2.1"/>
+                <RDF:li resource="urn:mozilla:extension:tsvnmenu@pumacode.org"/>
             </RDF:Seq>
         </em:updates>
     </RDF:Description>
-    <RDF:Description about="urn:mozilla:extension:tsvnmenu@pumacode.org:0.2.1">
+    <RDF:Description about="urn:mozilla:extension:tsvnmenu@pumacode.org">
         <em:version>0.2.2</em:version>
         <em:targetApplication>
             <RDF:Description>
