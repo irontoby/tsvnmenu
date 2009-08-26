@@ -108,7 +108,7 @@ var TsvnMenu = {
         }
         
         try {
-            var process = Components.classes['@mozilla.org/process/util;1'].getService(Components.interfaces.nsIProcess);
+            var process = Components.classes['@mozilla.org/process/util;1'].createInstance(Components.interfaces.nsIProcess);
             process.init(tprocExe);
             
             var args = ['/command:' + command];

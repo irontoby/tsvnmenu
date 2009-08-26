@@ -6,7 +6,7 @@
   
     <em:id>tsvnmenu@pumacode.org</em:id>
     <em:name>TortoiseSVN Menu</em:name>
-    <em:version>0.2.3</em:version>
+    <em:version>0.2.4</em:version>
     <em:description>Add TortoiseSVN commands to link context menus</em:description>
     <em:creator>Copyright (C) 2005 Toby Johnson. Released under GPL v2.</em:creator>
     <!-- optional items -->
@@ -21,7 +21,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>1.4</em:minVersion>
-        <em:maxVersion>3.0.*</em:maxVersion>
+        <em:maxVersion>3.5.*</em:maxVersion>
       </Description>
     </em:targetApplication>
 
