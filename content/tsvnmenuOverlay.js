@@ -27,13 +27,22 @@ var TsvnMenu = {
             
             var prefs = prefservice.getBranch(this.prefBranch);
             
-            if (prefs.getPrefType(this.prefTprocPath) == prefs.PREF_STRING) {
+            if (prefs != null && (prefs.getPrefType(this.prefTprocPath) == prefs.PREF_STRING)) {
                 this.tprocPath = prefs.getCharPref(this.prefTprocPath);
             }
             
             if (this.tprocPath == null || this.tprocPath == '') {
-                this.tprocPath = this.getTsvnProcPathFromReg();
-                prefs.setCharPref(this.prefTprocPath, this.tprocPath);
+                this.tprocPath = this.getTsvnProcDirFromReg();
+                
+                if(this.tprocPath == null) {
+                    this.tprocPath = this.getTsvnProcDefaultDir();
+                }
+                
+                this.tprocPath += '\\bin\\TortoiseProc.exe';
+                
+                if(prefs != null) {
+                    prefs.setCharPref(this.prefTprocPath, this.tprocPath);
+                }
             }
             
         } catch (e) {
@@ -44,21 +53,32 @@ var TsvnMenu = {
         return(true);
     },
     
-    getTsvnProcPathFromReg: function() {
+    getTsvnProcDirFromReg: function() {
         var tsvnDir;
         var reg;
         
         try {
             reg = Components.classes['@mozilla.org/windows-registry-key;1'].
                 createInstance(Components.interfaces.nsIWindowsRegKey);
-
-            reg.open(reg.ROOT_KEY_LOCAL_MACHINE, 'Software\\TortoiseSVN',
-                reg.ACCESS_QUERY_VALUE);
+            
+            if(reg == null) {
+                return(null);
+            }
+            
+            try {
+                reg.open(reg.ROOT_KEY_LOCAL_MACHINE, 'Software\\TortoiseSVN',
+                    reg.ACCESS_QUERY_VALUE);
+            } catch(e) {
+                reg.open(reg.ROOT_KEY_LOCAL_MACHINE, 'Software\\TortoiseSVN',
+                    reg.ACCESS_QUERY_VALUE | 0x0100);
+            }
+            
+            // TODO: Read 'ProcPath' value instead if avail
             tsvnDir = reg.readStringValue('Directory').replace(/\\$/, "");
             
         } catch(e) {
-            this.doError('Could not find TortoiseSVN program in registry; '
-                + 'using default location.');
+            // TODO: use file picker here?
+            return(null);
         }
         
         try {
@@ -67,10 +87,14 @@ var TsvnMenu = {
         }
 
         if (tsvnDir == null || tsvnDir == "") {
-            tsvnDir = 'C:\\Program Files\\TortoiseSVN';
+            return(null);
         }
         
-        return(tsvnDir + '\\bin\\TortoiseProc.exe');
+        return(tsvnDir);
+    },
+    
+    getTsvnProcDefaultDir: function() {
+        return('C:\\Program Files\\TortoiseSVN');
     },
     
     doContext: function() {
