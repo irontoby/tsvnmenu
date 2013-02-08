@@ -10,7 +10,7 @@
     <em:description>Add TortoiseSVN commands to link context menus</em:description>
     <em:creator>Copyright (C) 2005-2010 Toby Johnson. Released under GPL v2.</em:creator>
     <!-- optional items -->
-    <em:homepageURL>http://www.pumacode.org/projects/tsvnmenu/</em:homepageURL>
+    <em:homepageURL>https://github.com/irontoby/tsvnmenu</em:homepageURL>
     <em:iconURL>chrome://tsvnmenu/skin/tsvnmenu-icon.png</em:iconURL>
 
     <!--em:optionsURL>chrome://sampleext/content/settings.xul</em:optionsURL>
